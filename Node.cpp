@@ -1,8 +1,6 @@
 #include "Node.h"
 
-Node::Node() {
-
-}
+Node::Node() = default;
 
 Node* Node::getNext() {
   return next; 
