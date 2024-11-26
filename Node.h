@@ -13,8 +13,8 @@ class Node {
   void setNext(Node*); //set the next pointer to the corresponding node pointer
 
  private:
-  Student* student{};
-  Node* next{};
+  Student* student;
+  Node* next;
 };
 
 class Student {
