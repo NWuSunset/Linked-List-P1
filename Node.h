@@ -1,4 +1,8 @@
 #pragma once
+#ifndef NODE_H
+#define NODE_H
+
+
 #include "Student.h"
 
 
@@ -17,3 +21,4 @@ class Node {
   Node* next; // 'next'
 };
 
+#endif
