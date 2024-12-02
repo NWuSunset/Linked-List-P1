@@ -1,6 +1,10 @@
 #include "Node.h"
 
-Node::Node() = default;
+Node::Node() = default; 
+
+Node::Node(Student* student) {
+  this->student = student;
+}
 
 Node* Node::getNext() {
   return next; 

@@ -1,23 +1,19 @@
 #pragma once
+#include "Student.h"
 
-class Student;
 
 class Node {
  public:
-  Node(Student*); //Constructor that takes a Student pointer(will probably be used to add a student)
-  ~Node();
+  Node(Student*); //Constructor that takes a Student pointer. Sets 'student' to the passed in pointer
+  ~Node(); //Destructor. Deletes 'next' and 'student'
 
-  Node();
-  Node* getNext(); //get next Node pointer
-  Student* getStudent(); //get student pointer
-  void setNext(Node*); //set the next pointer to the corresponding node pointer
+  Node(); //default constructor 
+  Node* getNext(); //get next Node pointer. returns 'next'
+  Student* getStudent(); //get student pointer. returns 'student'
+  void setNext(Node*); //set the next pointer to the corresponding node pointer. 'next' is set to the passed in pointer
 
  private:
-  Student* student;
-  Node* next;
+  Student* student; // 'student'
+  Node* next; // 'next'
 };
 
-class Student {
- public:
-  Student();
-};
